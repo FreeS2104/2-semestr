@@ -4,14 +4,14 @@ namespace ConsoleApp4
 {
     class Program
     {
-        delegate int Operation(char c, string s);
-        delegate void Symbol(char c);
+        delegate int Operation(char x, string y);
+        delegate void Symbol(char x);
 
         static void Main(string[] args)
         {
 
-            char x = 'o';
-            string y = "a z x d o o a z ";
+            char x = 'f';
+            string y = "I left home";
             Operation del = Point;
             int res = del(x, y);
             Console.WriteLine(res);
@@ -32,9 +32,9 @@ namespace ConsoleApp4
                 return -1;
             return num;
         }
-        private static int Value(char c, string s)
+        private static int Value(char x, string y)
         {
-            return s.IndexOf(c);
+            return y.IndexOf(x);
         }
     }
 }
