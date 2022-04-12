@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ConsoleApp4
+namespace pz_8
 {
     class Program
     {
